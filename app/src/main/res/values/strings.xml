@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">BJ Systems</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Enter</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main">Main</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="technical_info">Technical Info</string>
+    <string name="title_activity_joblist">joblist</string>
+    <string name="technical_library">Technical Library</string>
+    <string name="sick_leave">Sick Leave</string>
+    <string name="job_list">Job List</string>
+    <string name="title_activity_audio_techlib">audio_techlib</string>
+    <string name="phone_list">Phone List</string>
+    <string name="bj_calendar">BJ Calendar</string>
+    <string name="leave_request">Leave Request</string>
+    <string name="myosh">MyOsh</string>
+    <string name="site_information">Site Information</string>
+
+
+</resources>

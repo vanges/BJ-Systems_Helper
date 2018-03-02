@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="e.phlange.login.Home">
+
+    <ImageButton
+        android:id="@+id/button_joblist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="send_joblist"
+        app:layout_constraintStart_toEndOf="@+id/button_siteinfo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/button_sickemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="124dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="send_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/button_techhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="send_techhome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_save"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/button_phonelist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="17dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="send_phonelist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/techhome_txt"
+        app:srcCompat="@android:drawable/ic_menu_call"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/techhome_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/technical_library"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_techhome"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/sickleave_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/sick_leave"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toEndOf="@+id/phonelist_txt"
+        app:layout_constraintTop_toBottomOf="@+id/button_sickemail"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/joblist_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/job_list"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toEndOf="@+id/siteinfo_txt"
+        app:layout_constraintTop_toBottomOf="@+id/button_joblist"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/phonelist_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/phone_list"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_phonelist"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/button_bjcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="11dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="send_bjcal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phonelist_txt"
+        app:srcCompat="@android:drawable/ic_menu_month"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/bjcalendar_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/bj_calendar"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_bjcal"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/button_leavereq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="17dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="send_leavereq"
+        app:layout_constraintStart_toEndOf="@+id/button_sickemail"
+        app:layout_constraintTop_toBottomOf="@+id/joblist_txt"
+        app:srcCompat="@android:drawable/ic_menu_mapmode"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/leaverequest_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/leave_request"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toEndOf="@+id/sickleave_txt"
+        app:layout_constraintTop_toBottomOf="@+id/button_leavereq"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/button_myosh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="216dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="send_myosh"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_view"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/myosh"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toEndOf="@+id/bjcalendar_txt"
+        app:layout_constraintTop_toBottomOf="@+id/button_myosh"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/button_siteinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="send_siteinfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_info_details"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/siteinfo_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/site_information"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toEndOf="@+id/techhome_txt"
+        app:layout_constraintTop_toBottomOf="@+id/button_siteinfo"
+        tools:ignore="ContentDescription" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="64dp" />
+
+
+</android.support.constraint.ConstraintLayout>
